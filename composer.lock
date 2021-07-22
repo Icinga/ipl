@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cec3177872f5ca799f2e695172dd29f3",
+    "content-hash": "27e4e9f69ae35fc3f3ddbf72126d7526",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -52,6 +52,10 @@
                 "event-dispatcher",
                 "event-emitter"
             ],
+            "support": {
+                "issues": "https://github.com/igorw/evenement/issues",
+                "source": "https://github.com/igorw/evenement/tree/master"
+            },
             "time": "2017-07-17T17:39:19+00:00"
         },
         {
@@ -115,11 +119,17 @@
                 "icon",
                 "svg"
             ],
+            "support": {
+                "docs": "http://fontawesome.com/how-to-use",
+                "email": "hello@fontawesome.com",
+                "issues": "https://github.com/FortAwesome/Font-Awesome/issues",
+                "source": "https://github.com/FortAwesome/Font-Awesome"
+            },
             "time": "2021-03-16T18:57:33+00:00"
         },
         {
             "name": "ipl/html",
-            "version": "v0.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-html.git",
@@ -137,6 +147,7 @@
                 "php": ">=5.6.0",
                 "psr/http-message": "~1.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -152,27 +163,33 @@
             "keywords": [
                 "html"
             ],
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-html/issues",
+                "source": "https://github.com/Icinga/ipl-html/tree/v0.4.0"
+            },
             "time": "2021-06-22T08:28:36+00:00"
         },
         {
             "name": "ipl/i18n",
-            "version": "v0.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-i18n.git",
-                "reference": "22110a24ee589c424d6fe9ab5eb334e849abd1d0"
+                "reference": "104a31ada051d1d8456e4a29021a1a4ce750aa07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Icinga/ipl-i18n/zipball/22110a24ee589c424d6fe9ab5eb334e849abd1d0",
-                "reference": "22110a24ee589c424d6fe9ab5eb334e849abd1d0",
+                "url": "https://api.github.com/repos/Icinga/ipl-i18n/zipball/104a31ada051d1d8456e4a29021a1a4ce750aa07",
+                "reference": "104a31ada051d1d8456e4a29021a1a4ce750aa07",
                 "shasum": ""
             },
             "require": {
                 "ext-gettext": "*",
+                "ext-intl": "*",
                 "ipl/stdlib": ">=0.6.0",
                 "php": ">=5.6.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -195,11 +212,15 @@
                 "localization",
                 "translation"
             ],
-            "time": "2021-06-09T09:14:50+00:00"
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-i18n/issues",
+                "source": "https://github.com/Icinga/ipl-i18n/tree/master"
+            },
+            "time": "2021-07-19T10:08:42+00:00"
         },
         {
             "name": "ipl/orm",
-            "version": "v0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-orm.git",
@@ -220,6 +241,7 @@
             "require-dev": {
                 "ext-pdo_sqlite": "*"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -237,20 +259,24 @@
                 "orm",
                 "sql"
             ],
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-orm/issues",
+                "source": "https://github.com/Icinga/ipl-orm/tree/v0.2.0"
+            },
             "time": "2021-06-15T14:16:06+00:00"
         },
         {
             "name": "ipl/sql",
-            "version": "v0.3.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-sql.git",
-                "reference": "e3370eda770b0781b69b554f2b8ebff7bb4f5351"
+                "reference": "4bae3fb4bbe05407e378f8eafd379ebf0afc7faa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Icinga/ipl-sql/zipball/e3370eda770b0781b69b554f2b8ebff7bb4f5351",
-                "reference": "e3370eda770b0781b69b554f2b8ebff7bb4f5351",
+                "url": "https://api.github.com/repos/Icinga/ipl-sql/zipball/4bae3fb4bbe05407e378f8eafd379ebf0afc7faa",
+                "reference": "4bae3fb4bbe05407e378f8eafd379ebf0afc7faa",
                 "shasum": ""
             },
             "require": {
@@ -258,6 +284,7 @@
                 "ipl/stdlib": ">=0.9.0",
                 "php": ">=5.6.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -274,20 +301,24 @@
                 "database",
                 "sql"
             ],
-            "time": "2021-06-24T07:15:57+00:00"
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-sql/issues",
+                "source": "https://github.com/Icinga/ipl-sql/tree/master"
+            },
+            "time": "2021-07-20T08:30:24+00:00"
         },
         {
             "name": "ipl/stdlib",
-            "version": "v0.9.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-stdlib.git",
-                "reference": "1280dd6a0b6f79864e2aa2fa3f021ea4f6f1b65a"
+                "reference": "f6c97d8929ff44d673b698444154b6bf0850207c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Icinga/ipl-stdlib/zipball/1280dd6a0b6f79864e2aa2fa3f021ea4f6f1b65a",
-                "reference": "1280dd6a0b6f79864e2aa2fa3f021ea4f6f1b65a",
+                "url": "https://api.github.com/repos/Icinga/ipl-stdlib/zipball/f6c97d8929ff44d673b698444154b6bf0850207c",
+                "reference": "f6c97d8929ff44d673b698444154b6bf0850207c",
                 "shasum": ""
             },
             "require": {
@@ -295,6 +326,7 @@
                 "ext-openssl": "*",
                 "php": ">=5.6.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -311,11 +343,15 @@
                 "MIT"
             ],
             "description": "ipl Standard Library",
-            "time": "2021-03-19T13:18:41+00:00"
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-stdlib/issues",
+                "source": "https://github.com/Icinga/ipl-stdlib/tree/master"
+            },
+            "time": "2021-04-08T11:02:11+00:00"
         },
         {
             "name": "ipl/validator",
-            "version": "v0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-validator.git",
@@ -333,6 +369,7 @@
                 "ipl/stdlib": ">=0.5.0",
                 "php": ">=5.6.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -345,29 +382,34 @@
             ],
             "description": "Icinga PHP Library - Common validators and validator chaining",
             "homepage": "https://github.com/Icinga/ipl-validator",
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-validator/issues",
+                "source": "https://github.com/Icinga/ipl-validator/tree/v0.2.0"
+            },
             "time": "2021-06-15T13:30:13+00:00"
         },
         {
             "name": "ipl/web",
-            "version": "v0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Icinga/ipl-web.git",
-                "reference": "39036598b7e689722bd1c563c29c8f2604a763b6"
+                "reference": "9e92a49b50df0a8ec557fed422477e9815cfcfb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Icinga/ipl-web/zipball/39036598b7e689722bd1c563c29c8f2604a763b6",
-                "reference": "39036598b7e689722bd1c563c29c8f2604a763b6",
+                "url": "https://api.github.com/repos/Icinga/ipl-web/zipball/9e92a49b50df0a8ec557fed422477e9815cfcfb1",
+                "reference": "9e92a49b50df0a8ec557fed422477e9815cfcfb1",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "fortawesome/font-awesome": "^5.13",
-                "ipl/html": "^0.4.0",
-                "ipl/stdlib": "^0.9.0",
+                "ipl/html": ">=0.4.0",
+                "ipl/stdlib": ">=0.9.0",
                 "php": ">=5.6.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -383,7 +425,11 @@
             "keywords": [
                 "html"
             ],
-            "time": "2021-06-24T09:16:23+00:00"
+            "support": {
+                "issues": "https://github.com/Icinga/ipl-web/issues",
+                "source": "https://github.com/Icinga/ipl-web/tree/master"
+            },
+            "time": "2021-07-20T11:21:05+00:00"
         },
         {
             "name": "psr/http-message",
@@ -433,13 +479,24 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ipl/html": 20,
+        "ipl/i18n": 20,
+        "ipl/orm": 20,
+        "ipl/sql": 20,
+        "ipl/stdlib": 20,
+        "ipl/validator": 20,
+        "ipl/web": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
@@ -449,5 +506,5 @@
     "platform-overrides": {
         "php": "5.6.3"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }

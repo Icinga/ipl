@@ -37,7 +37,7 @@ class IcingaFormDecorator extends DivDecorator
             $checkbox->setAttribute('id', base64_encode(random_bytes(8)));
         }
 
-        $checkbox->getAttributes()->add('hidden', true);
+        $checkbox->getAttributes()->add('class', 'sr-only');
 
         $classes = ['toggle-switch'];
         if ($checkbox->getAttributes()->get('disabled')->getValue()) {
@@ -47,8 +47,9 @@ class IcingaFormDecorator extends DivDecorator
         return [
             $checkbox,
             new HtmlElement('label', Attributes::create([
-                'class' => $classes,
-                'for'   => $checkbox->getAttributes()->get('id')->getValue()
+                'class'         => $classes,
+                'aria-hidden'   => 'true',
+                'for'           => $checkbox->getAttributes()->get('id')->getValue()
             ]), new HtmlElement('span', Attributes::create(['class' => 'toggle-slider'])))
         ];
     }

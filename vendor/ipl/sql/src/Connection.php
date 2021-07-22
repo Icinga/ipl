@@ -160,7 +160,7 @@ class Connection implements Quoter
 
         $this->pdo = $this->createPdoAdapter();
 
-        if ($this->config->charset !== null) {
+        if (! empty($this->config->charset)) {
             $this->exec(sprintf('SET NAMES %s', $this->pdo->quote($this->config->charset)));
         }
 

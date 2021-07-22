@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit62f47698bf3af7ed14e58353ccebfea4
+class ComposerStaticInit39b01eb1c30eb2fe0f97861496a33ac7
 {
     public static $files = array (
         'a2c78434f64e5f5ed402f42eee19c025' => __DIR__ . '/..' . '/ipl/stdlib/src/functions_include.php',
@@ -82,12 +82,17 @@ class ComposerStaticInit62f47698bf3af7ed14e58353ccebfea4
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit62f47698bf3af7ed14e58353ccebfea4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit62f47698bf3af7ed14e58353ccebfea4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit62f47698bf3af7ed14e58353ccebfea4::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit39b01eb1c30eb2fe0f97861496a33ac7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit39b01eb1c30eb2fe0f97861496a33ac7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit39b01eb1c30eb2fe0f97861496a33ac7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit39b01eb1c30eb2fe0f97861496a33ac7::$classMap;
 
         }, null, ClassLoader::class);
     }
